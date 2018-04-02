@@ -54,3 +54,6 @@ setopt HIST_VERIFY # Don't execute immediately upon history expansion.
 zstyle ':completion:*:complete:-command-:*:*' ignored-patterns '*.pdf|*.exe|*.dll'
 zstyle ':completion:*:*sh:*:' tag-order files
 
+
+# print useful information after login
+source "${ZSH_RC_PATH}useful_info.zsh"
