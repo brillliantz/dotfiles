@@ -57,3 +57,4 @@ zstyle ':completion:*:*sh:*:' tag-order files
 
 # print useful information after login
 source "${ZSH_RC_PATH}useful_info.zsh"
+

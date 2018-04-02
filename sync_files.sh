@@ -1,4 +1,4 @@
 cp ~/.zshrc ./zshrc
-cp -r ~/.rcs/* ./rcs/
+cp -rf ~/.rcs/* ./rcs/
 cp ~/.gitconfig gitconfig
 
