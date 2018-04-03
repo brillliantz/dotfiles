@@ -65,10 +65,12 @@ map <F5> :call CompileRunGcc()<CR>
 func! CompileRunGcc()
     exec "w"
     if &filetype == 'c'
+        exec "!clear"
         exec "!gcc % -o %<"
         exec "!time ./%<"
     elseif &filetype == 'cpp'
-        exec "!g++ % -o %<"
+        exec "!clear"
+        exec "!g++ -Wall -g % -o %<"
         exec "!time ./%<"
     elseif &filetype == 'java'
         exec "!javac %"
@@ -77,7 +79,7 @@ func! CompileRunGcc()
         :!time bash %
     elseif &filetype == 'python'
         exec "!clear"
-        exec "!time python3 %"
+        exec "!time python %"
     elseif &filetype == 'html'
         exec "!firefox % &"
     elseif &filetype == 'go'
