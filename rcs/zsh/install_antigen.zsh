@@ -2,7 +2,7 @@
 # GitHub: https://github.com/zsh-users/antigen
 
 # Path for antigen.zsh
-ANTIGEN="$HOME/antigen.zsh"
+ANTIGEN="$HOME/.rcs/zsh/antigen.zsh"
 
 # Install antigen.zsh if not exist
 if [ ! -f "$ANTIGEN" ]; then
@@ -10,7 +10,8 @@ if [ ! -f "$ANTIGEN" ]; then
 	[ ! -d "$HOME/.local" ] && mkdir -p "$HOME/.local" 2> /dev/null
 	[ ! -d "$HOME/.local/bin" ] && mkdir -p "$HOME/.local/bin" 2> /dev/null
 	[ ! -f "$HOME/.z" ] && touch "$HOME/.z"
-	URL="http://git.io/antigen"
+	#URL="http://git.io/antigen"
+    URL="https://raw.githubusercontent.com/zsh-users/antigen/master/bin/antigen.zsh"
 	TMPFILE="/tmp/antigen.zsh"
 	if [ -x "$(which curl)" ]; then
 		curl -L "$URL" -o "$TMPFILE" 
