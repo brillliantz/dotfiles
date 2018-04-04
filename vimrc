@@ -1,6 +1,7 @@
 
 " basic
 "source ~/.rcs/vim/basic_no_plugin.vim
+
 source ~/.rcs/vim/vim_plug.vim
 
 " show existing tab with 4 spaces width
