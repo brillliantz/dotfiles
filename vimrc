@@ -61,7 +61,13 @@ set winheight=5
 set winminheight=5
 set winheight=999
 
-"
+" Fold
+set foldmethod=indent   
+set foldnestmax=10
+"set nofoldenable
+set foldlevel=2
+
+" one-key run
 map <F5> :call CompileRunGcc()<CR>
 func! CompileRunGcc()
     exec "w"
