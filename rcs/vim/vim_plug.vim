@@ -54,6 +54,9 @@ call plug#begin('~/.vim/plugged')
 
     " The NERDTree is a file system explorer for the Vim editor
     Plug 'scrooloose/nerdtree'
+
+    " Aligning Text
+    Plug 'godlygeek/tabular'
     
     "ALE (Asynchronous Lint Engine) is a plugin for providing linting in
     "NeoVim and Vim 8 while you edit your text files.
