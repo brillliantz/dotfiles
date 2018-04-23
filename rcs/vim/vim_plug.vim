@@ -74,7 +74,7 @@ call plug#begin('~/.vim/plugged')
 call plug#end()
 
 " YouCompleteMe
-let g:ycm_global_ycm_extra_conf='/home/brz/.vim/plugged/YouCompleteMe/ycm_extra_conf.py'
+let g:ycm_global_ycm_extra_conf='/home/brz/.rcs/vim/ycm_extra_conf.py'
 
 " NERD Tree
 nnoremap <F3> :NERDTreeToggle<CR>
